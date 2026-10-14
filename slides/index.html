@@ -102,7 +102,7 @@
   .pills { display: flex; flex-wrap: wrap; gap: 10px; margin-top: clamp(14px, 3vh, 30px); }
   .pill { padding: 9px 16px; border-radius: 99px; border: 1px solid var(--line2); font-size: clamp(12px, 1.15vw, 17px); color: var(--fg2); }
 
-  .runtime { align-self: center; margin-top: clamp(14px, 3vh, 30px); display: flex; align-items: baseline; justify-content: center; gap: clamp(12px, 1.4vw, 22px); padding: clamp(12px, 2vh, 22px) clamp(18px, 2vw, 34px); border-radius: clamp(12px, 1.3vw, 20px); border: 1.5px solid var(--accent); background: rgba(24, 24, 58, 0.9); }
+  .runtime { align-self: center; margin-top: clamp(14px, 3vh, 30px); display: flex; align-items: center; justify-content: center; gap: clamp(12px, 1.4vw, 22px); padding: clamp(12px, 2vh, 22px) clamp(18px, 2vw, 34px); border-radius: clamp(12px, 1.3vw, 20px); border: 1.5px solid var(--accent); background: rgba(24, 24, 58, 0.9); }
   .runtime b { font-family: var(--mono); font-size: clamp(26px, 3.4vw, 56px); line-height: 1; color: var(--accent); }
   .runtime span { font-size: clamp(14px, 1.5vw, 23px); color: var(--fg2); }
   .pills.even { flex-wrap: nowrap; justify-content: center; }
@@ -357,7 +357,7 @@ TrustyShelf. Smarter shelves, better decisions.</aside>
       <span class="pill rise" style="--i:5">Scored on Sensei's annotations: 28 images, 289 areas</span>
       <span class="pill rise" style="--i:6">A stock mistake costs 2 or 3 points, that's where the 64 errors come from</span>
     </div>
-    <div class="runtime rise" style="--i:7"><b>55s</b><span>to run the whole dataset</span></div>
+    <div class="runtime rise" style="--i:7"><b>~30s</b><span>to run the whole dataset</span></div>
     <aside>Our final result on the validation set, scored against Sensei's own annotations: 504 of 578 answers right, a success rate of 87.2%.
 Compliance is solid: we got the product question wrong in only 10 of 289 areas, 3.5%.
 Stock level is where we lost: 225 of 289 areas right, 77.9%, so 64 areas wrong. Because a wrong stock answer costs the point plus a penalty of 2 or 3, those errors take most of the score.
