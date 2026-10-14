@@ -20,7 +20,7 @@ python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-The data is not in git. Unzip the organisers' dataset so that you have:
+The organisers' dataset is included in `data/`. To use a fresh copy instead, lay it out like this:
 
 ```
 data/
